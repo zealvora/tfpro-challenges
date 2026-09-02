@@ -15,7 +15,7 @@ provider "aws" {
 resource "aws_launch_template" "this" {
     name     = "terraform-launch-template"
     image_id = "ami-06b21ccaeff8cd686"
-    instance_type = "t2.micro"
+    instance_type = "t3.micro"
 }
 
 resource "aws_autoscaling_group" "dev" {
