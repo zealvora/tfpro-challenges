@@ -9,7 +9,7 @@ This challenge tests your understanding of Terraform Modules by requiring you to
 
 #### 1. Deploy the Resources
 
-Deploy all the resources by running `terraform apply -auto-approve`
+Deploy all the resources by running `terraform init && terraform apply -auto-approve`
 
 #### 2. Replace Hard Coded Value with Data Source
 
@@ -33,8 +33,8 @@ Split (Move) the existing code into multiple child modules as described in below
 | `random_pet`  |  random      | 
 
 
-* Do NOT modify the main resource configuration code that were moved inside the child modules. (only for this task)
-* Configure appropriate module sources in the root module (main.tf) to load all child modules.
+* Do NOT modify the resource configuration code copied into the child modules.
+* Configure appropriate module calls in the root module (main.tf) to load all child modules.
 * Add appropriate variables in child modules.
 * Add appropriate variable value in root module.
 
@@ -58,7 +58,7 @@ Ensure there are no errors when you run `terraform plan`
 
 #### 5. Configure Addressing
 
-Update the resource address in state file to reflect the refactoring of monolithic configuration into multiple child modules.
+Update the resource addresses using moved() blocks to reflect the refactoring of monolithic configuration into multiple child modules.
 
 After completing previous step, run `terraform plan` and ensures there are no changes
 ```sh

@@ -11,7 +11,7 @@ provider "aws" {
  region = "us-east-1"
  default_tags {
    tags = {
-     Environment = var.environement
+     Environment = var.environment
    }
  }
 }
@@ -19,7 +19,7 @@ resource "random_pet" "this" {}
 
 resource "aws_instance" "this" {
   ami = "ami-0ec10929233384c7f"
-  instance_type = "t2.micro"
+  instance_type = "t3.micro"
   iam_instance_profile = aws_iam_instance_profile.test_profile.name
 }
 
