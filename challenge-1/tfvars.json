@@ -1,5 +1,5 @@
 {
-    "environement": "production",
+    "environment": "production",
     "region": "us-east-1c",
     "s3_buckets": ["kplabs-1","kplabs-2"],
     "org-name" : "kplabs",

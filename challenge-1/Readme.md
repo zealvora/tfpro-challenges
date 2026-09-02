@@ -53,9 +53,9 @@ Save the output values to files as per the below table
 
 #### 4. Delete the Resource and Files
 
-* Remove the `aws_security_group` and `aws_vpc_security_group_ingress_rule` resource type related code from your  Terraform configuration.
+* Remove the `aws_security_group` and `aws_vpc_security_group_ingress_rule` resource type related code from your Terraform configuration.
 
-* Delete the `terraform.tfstate` file and it's backup (terraform.tfstate.backup), if available.
+* Delete the `terraform.tfstate` file and its backup (terraform.tfstate.backup), if available.
 
 #### 5. Import ALL resources
 
@@ -67,9 +67,9 @@ Save the output values to files as per the below table
 
 * Create a new object in S3 bucket using `aws_s3_object`
 
-* The name of object must be `new.txt`
+* The name of the object must be `new.txt`
 
-* Content of the object must be `Success`
+* The content of the object must be `Success`
 
 #### 7. Remove Object from State
 
@@ -77,7 +77,7 @@ Save the output values to files as per the below table
 * Ensure this object is not deleted from AWS.
 
 > [!CAUTION]
-> The previous S3 object `base.txt` must not be deleted, othewise you will loose marks.
+> The previous S3 object `base.txt` must not be deleted, othewise you will lose marks.
 
 
 #### 8. Destroy all Resources
