@@ -38,10 +38,10 @@ Set up a shared AWS credentials and configuration files for this project.
 
 * The `conf` and `credentials` file must be present in the `.aws` folder in `challenge-3` directory. 
 
-* The config file must only have two profiles `[asg]` and `[iam]`. No default or other profile should me mentioned.
+* The config file must only have two profiles `[asg]` and `[iam]`. No default or other profile should be mentioned.
 * Use the region of `us-east-1` for both the profiles.
 
-* Both the `[asg]` and `[iam]` profile in `./aws/conf` file should point to appropriate IAM roles that were created in `base-folder`  using following details:
+* Both the `[asg]` and `[iam]` profile in `./aws/conf` file should point to appropriate IAM roles that were created in `base-folder` using following details:
 ```
  [asg] profile should point to ARN of IAM role named `EC2FullAccess` 
  [iam] profile should point to ARN of IAM role named `IAMFullAccess`
@@ -66,9 +66,9 @@ Run the `terraform apply -auto-approve` to create all other resources.
 
 Change `desired_capacity` in Terraform code from `1` to `2`.
 
-Add appropriate solution that ignores any changes made to `desired_capacity` so that only `1` EC2 instance runs as part of `desired_capacity` similar to base code provided.
+Add appropriate solution that ignores any changes made to `desired_capacity` so that only `1` EC2 instance runs as part of `desired_capacity` similar to the base code provided.
 
-After you have applied solution, try changing capacity for ASG resource to verify if Terraform plans to change/update it in actual resource.
+After you have applied the solution, try changing capacity for ASG resource to verify if Terraform plans to change/update it in actual resource.
 
 ### Destroy Infrastructure
 
